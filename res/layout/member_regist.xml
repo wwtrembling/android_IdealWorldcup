@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content">
+		<TextView
+			android:layout_width="120dp"
+			android:layout_height="50dp"
+			android:textSize="17dp"
+			android:text="그룹 아이디" />
+		<EditText
+			android:id="@+id/groupuid_edt"
+			android:layout_width="fill_parent"
+			android:layout_height="50dp" 
+			android:text=""/>
+	</LinearLayout>
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content">
+		<TextView
+			android:layout_width="120dp"
+			android:layout_height="50dp"
+			android:textSize="17dp"
+			android:text="비밀번호" />
+		<EditText
+			android:id="@+id/grouppwd1_edt"
+			android:password="true"
+			android:layout_width="fill_parent"
+			android:layout_height="50dp" 
+			android:text=""/>
+	</LinearLayout>
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content">
+		<TextView
+			android:layout_width="120dp"
+			android:layout_height="50dp"
+			android:textSize="17dp"
+			android:text="비밀번호 확인" />
+		<EditText
+			android:id="@+id/grouppwd2_edt"
+			android:password="true"
+			android:layout_width="fill_parent"
+			android:layout_height="50dp" 
+			android:text=""/>
+	</LinearLayout>
+	<LinearLayout
+		android:orientation="horizontal"
+		android:gravity="center_vertical|center_horizontal"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content">
+		<Button
+			android:id="@+id/mregist_btn"
+			android:layout_width="120dp"
+			android:layout_height="50dp"
+			android:text="등록하기" />
+		<Button
+			android:id="@+id/mcancle_btn"
+			android:layout_width="100dp"
+			android:layout_height="50dp"
+			android:text="취소" />
+	</LinearLayout>
+</LinearLayout>

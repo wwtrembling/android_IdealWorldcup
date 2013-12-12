@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="#ffffff">
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_width="fill_parent"
+		android:layout_height="100dp">
+		<TextView
+			android:id="@+id/rank_row_rankno"
+			android:layout_width="40dp"
+			android:layout_height="fill_parent"
+			android:gravity="center_vertical|center_horizontal"
+			android:textColor="#000000"
+			android:text="" />
+		<ImageView
+			android:id="@+id/rank_row_img"
+			android:layout_width="120dp"
+			android:layout_height="fill_parent" />
+		<LinearLayout
+			android:orientation="vertical"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent">
+			<TextView
+			android:id="@+id/rank_name"
+			android:layout_width="fill_parent"
+			android:layout_height="50dp"
+			android:gravity="center_vertical"
+			android:layout_marginLeft="10dp"
+			android:textColor="#000000"
+			android:text="이름" 
+			/>
+			<TextView
+			android:id="@+id/rank_hits"
+			android:layout_width="fill_parent"
+			android:layout_height="50dp"
+			android:gravity="center_vertical"
+			android:layout_marginLeft="10dp"
+			android:textColor="#000000"
+			android:text="" 
+			/>
+		</LinearLayout>
+	</LinearLayout>
+</LinearLayout>

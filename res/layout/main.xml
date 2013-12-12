@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:gravity="center_vertical"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:background="#ffffff">
+	<LinearLayout
+		android:layout_weight="1"
+		android:gravity="center_horizontal"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent">
+		<Button
+			android:id="@+id/start_btn"
+			android:layout_gravity="bottom"
+			android:layout_width="120dp"
+			android:layout_height="wrap_content"
+			android:text="My 월드컵" />
+		<Button
+			android:id="@+id/rank_btn"
+			android:layout_gravity="bottom"
+			android:layout_width="120dp"
+			android:layout_height="wrap_content"
+			android:text="순위보기" />
+	</LinearLayout>
+	<LinearLayout
+		android:layout_weight="1"
+		android:gravity="center_horizontal"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent">
+		<Button
+			android:id="@+id/pic_btn"
+			android:layout_gravity="top"
+			android:layout_height="wrap_content"
+			android:text="사진 관리"
+			android:layout_width="120dp"></Button>
+		<Button
+			android:id="@+id/qs_btn"
+			android:layout_gravity="top"
+			android:layout_width="120dp"
+			android:layout_height="wrap_content"
+			android:text="질문 관리" />
+		<Button
+			android:id="@+id/finish_btn"
+			android:layout_gravity="top"
+			android:layout_width="120dp"
+			android:layout_height="wrap_content"
+			android:text="끝내기" />
+	</LinearLayout>
+</LinearLayout>

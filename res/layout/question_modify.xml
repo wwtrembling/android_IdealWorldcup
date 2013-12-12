@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:background="#ffffff">
+	<RelativeLayout
+		android:id="@+id/question_modify_r1"
+		android:layout_width="fill_parent"
+		android:layout_height="40dp"
+		android:paddingLeft="10dp"
+		android:paddingRight="10dp"
+		android:paddingTop="5dp">
+		<Button
+			android:id="@+id/question_modify_btn1"
+			android:layout_width="100dp"
+			android:layout_height="40dp"
+			android:layout_alignParentLeft="true"
+			android:text="수정하기" />
+		<Button
+			android:id="@+id/question_modify_btn2"
+			android:layout_width="100dp"
+			android:layout_height="40dp"
+			android:layout_toRightOf="@+id/question_modify_btn1"
+			android:text="삭제하기" />
+	</RelativeLayout>
+	<RelativeLayout
+		android:id="@+id/question_modify_r2"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/question_modify_r1"
+		android:paddingLeft="10dp"
+		android:paddingRight="10dp"
+		android:paddingTop="3dp">
+		<TextView
+			android:id="@+id/question_modify_txt1"
+			android:layout_width="100dp"
+			android:layout_height="40dp"
+			android:textColor="#000000"
+			android:text="질문정보"
+			android:layout_alignParentLeft="true"
+			android:gravity="center_vertical|center_horizontal" />
+		<EditText
+			android:id="@+id/question_modify_edt1"
+			android:layout_width="fill_parent"
+			android:layout_height="35dp"
+			android:textSize="7dp"
+			android:text=""
+			android:layout_toRightOf="@+id/question_modify_txt1" />
+	</RelativeLayout>
+	<RelativeLayout
+		android:id="@+id/question_modify_r3"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/question_modify_r2"
+		android:paddingLeft="10dp"
+		android:paddingRight="10dp"
+		android:paddingTop="3dp">
+		<TextView
+			android:id="@+id/question_modify_txt2"
+			android:layout_width="100dp"
+			android:layout_height="40dp"
+			android:textColor="#000000"
+			android:text="Round"
+			android:gravity="center_vertical|center_horizontal" />
+		<Spinner
+			android:id="@+id/question_modify_spinner1"
+			android:layout_width="fill_parent"
+			android:layout_height="40dp"
+			android:layout_toRightOf="@+id/question_modify_txt2">
+		</Spinner>
+	</RelativeLayout>
+	<RelativeLayout
+		android:id="@+id/question_modify_r4"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:layout_below="@+id/question_modify_r3"
+		android:gravity="center_vertical|center_horizontal">
+		<GridView
+			android:id="@+id/question_modify_gridview"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:columnWidth="90dp"
+			android:gravity="center"
+			android:stretchMode="columnWidth"
+			android:numColumns="auto_fit"
+			android:horizontalSpacing="-1px"
+			android:verticalSpacing="-1px" />
+	</RelativeLayout>
+
+</RelativeLayout>

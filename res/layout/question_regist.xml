@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/question_regist_rl1"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:background="#ffffff">
+	<RelativeLayout
+		android:id="@+id/question_regist_el1"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_alignParentTop="true">
+		<TextView
+			android:id="@+id/question_regist_txt1"
+			android:layout_width="80dp"
+			android:layout_height="wrap_content"
+			android:layout_margin="20dp"
+			android:textColor="#000000"
+			android:text="소유자" />
+		<Spinner
+			android:id="@+id/question_regist_spinner1"
+			android:layout_height="wrap_content"
+			android:layout_width="fill_parent"
+			android:layout_toRightOf="@+id/question_regist_txt1"></Spinner>
+	</RelativeLayout>
+
+	<RelativeLayout
+		android:id="@+id/question_regist_el2"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/question_regist_el1">
+		<TextView
+			android:id="@+id/question_regist_txt2"
+			android:layout_width="80dp"
+			android:layout_height="wrap_content"
+			android:layout_margin="20dp"
+			android:textColor="#000000"
+			android:text="라운드" />
+		<Spinner
+			android:id="@+id/question_regist_spinner2"
+			android:layout_height="wrap_content"
+			android:layout_width="fill_parent"
+			android:layout_toRightOf="@+id/question_regist_txt2"></Spinner>
+	</RelativeLayout>
+	<RelativeLayout
+		android:id="@+id/question_regist_el3"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/question_regist_el2">
+		<TextView
+			android:id="@+id/question_regist_txt3"
+			android:layout_width="80dp"
+			android:layout_height="wrap_content"
+			android:layout_margin="20dp"
+			android:textColor="#000000"
+			android:text="질문" />
+		<EditText
+			android:id="@+id/question_regist_qsname"
+			android:layout_height="wrap_content"
+			android:layout_width="fill_parent"
+			android:text="질문은 질문일뿐 따라하지 말자!"
+			android:layout_toRightOf="@+id/question_regist_txt3">
+			<requestFocus></requestFocus>
+		</EditText>
+	</RelativeLayout>
+	<RelativeLayout
+		android:id="@+id/question_regist_el4"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/question_regist_el3">
+		<Button
+			android:id="@+id/question_regist_ok"
+			android:layout_height="wrap_content"
+			android:layout_width="100dp"
+			android:textSize="10dp"
+			android:text="확인"
+			></Button>
+		<Button
+			android:id="@+id/question_regist_no"
+			android:layout_height="wrap_content"
+			android:layout_width="100dp"
+			android:textSize="10dp"
+			android:text="취소"
+			android:layout_toRightOf="@+id/question_regist_ok"
+			></Button>
+	</RelativeLayout>
+
+
+
+</RelativeLayout>

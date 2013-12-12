@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:background="#ffffff"
+	android:id="@+id/pic_gridview_view"
+	android:orientation="horizontal"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	<LinearLayout
+		android:background="#ffffff"
+		android:id="@+id/pic_view_l1"
+		android:layout_weight="1"
+		android:layout_height="fill_parent"
+		android:layout_width="fill_parent">
+		<ImageView
+			android:id="@+id/pic_view_img"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent" />
+	</LinearLayout>
+	<LinearLayout
+		android:background="#ffffff"
+		android:id="@+id/pic_view_l2"
+		android:layout_weight="1"
+		android:layout_height="fill_parent"
+		android:layout_width="fill_parent">
+		<RelativeLayout
+			android:background="#ffffff"
+			android:id="@+id/pic_view_l2_rl1"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent">
+			<TextView
+				android:id="@+id/pic_view_l2_rl1_txt1"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:padding="10dp"
+				android:textColor="#000000"
+				android:text="image name" />
+			<Button
+				android:text="MODIFY"
+				android:id="@+id/pic_view_l2_rl1_btn_modify"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_below="@+id/pic_view_l2_rl1_txt1"></Button>
+			<Button
+				android:text="REMOVE"
+				android:id="@+id/pic_view_l2_rl1_btn_remove"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_below="@+id/pic_view_l2_rl1_btn_modify"></Button>
+			<Button
+				android:text="CLOSE"
+				android:id="@+id/pic_view_l2_rl1_btn_close"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_below="@+id/pic_view_l2_rl1_btn_remove"></Button>
+		</RelativeLayout>
+	</LinearLayout>
+</LinearLayout>
